@@ -29,3 +29,11 @@
 - Descarga real observada: 202 MB / 76%; no inferencia completa. No declarar éxito que no ocurrió.
 - Worker, cancelar y watchdog de 180 s sin progreso mantienen el control del usuario. La prueba posterior regresó al modo simulado.
 - 15 tests finales: consentimiento y WebGPU ausente también preservan el resultado.
+
+## Session Close · 4 octubre 2026
+- App pública, siete commits funcionales/documentales antes del cierre, tres deploys READY comprobados y más deploys de robustez posteriores.
+- Quince tests aprobados; validación real desktop/móvil, descarga comprobada y consola sin errores en flujo estándar.
+- PDF packet, persona y conversación disponible preparados, renderizados y revisados. Script de demo preparado; no fabricar video ni voz/reflexión personal de Emiliano.
+- BUILDCHAT no equivale a exportación total de cada tool output; límites explícitos.
+- Primer movimiento de Emiliano: abrir URL, ensayar el guion con ejemplo ficticio, adaptar reflexión y grabar el MP4. Primer movimiento técnico futuro: comprobar modelo local en un navegador compatible con red estable, después entrevistas con pymes reales; no vender paquetes aún.
+- Cierre: commit y publicación de documentos mediante integración GitHub; checkout local sincronizado al remoto. No secretos ni datos personales de terceros.

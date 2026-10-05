@@ -1,0 +1,115 @@
+{
+  "product": "SME Shield MX",
+  "version": 1,
+  "demo": true,
+  "notice": "Datos ficticios o escenario declarado. No es auditoría ni cotización comercial. No se ejecutó ninguna acción.",
+  "assessment": {
+    "input": {
+      "employees": 8,
+      "revenue": 8000,
+      "hours": 9,
+      "sector": "comercio",
+      "partner": "contador",
+      "backup": "unknown",
+      "access": "no",
+      "updates": "yes",
+      "incident": "no"
+    },
+    "plan": {
+      "id": "esencial",
+      "name": "Esencial",
+      "min": 5,
+      "max": 10,
+      "price": 790,
+      "minutes": 30,
+      "features": [
+        "Revisión mensual de accesos",
+        "Lista guiada de respaldo y recuperación",
+        "30 min/mes de revisión humana propuesta"
+      ],
+      "costs": [
+        250,
+        150,
+        120,
+        79
+      ]
+    },
+    "unknown": [
+      "backup"
+    ],
+    "missing": [
+      "access"
+    ],
+    "actions": [
+      {
+        "id": "backup",
+        "title": "Comprueba que puedes recuperar un archivo",
+        "detail": "Pide a tu proveedor una prueba con un archivo ficticio fuera de los archivos que usas para trabajar, sin sustituirlos. Tener una copia no demuestra que puedas recuperar la operación.",
+        "owner": "Proveedor de TI",
+        "time": "Esta semana",
+        "critical": true
+      },
+      {
+        "id": "access",
+        "title": "Prepara el doble paso para entrar",
+        "detail": "Revisa con tu proveedor la verificación en dos pasos del correo. Antes de cambiar accesos, acuerden cómo recuperar la cuenta sin interrumpir el negocio.",
+        "owner": "Dueño + proveedor",
+        "time": "Esta semana",
+        "critical": true
+      },
+      {
+        "id": "recovery",
+        "title": "Define a quién llamar si el negocio se detiene",
+        "detail": "Prepara fuera de esta app una lista de responsables y canales oficiales. Ensaya quién decide y qué operación debe recuperarse primero.",
+        "owner": "Dueño",
+        "time": "Esta semana",
+        "critical": false
+      }
+    ],
+    "severity": "Por revisar",
+    "humanRequired": true,
+    "hourly": 1000,
+    "exposure": 9000,
+    "equivalentHours": 0.79,
+    "simulated": true
+  },
+  "draft": {
+    "type": "Borrador local; no enviado",
+    "simulated": true,
+    "request": "Revisión humana de continuidad",
+    "severity": "Por revisar",
+    "plan": "Esencial",
+    "actions": [
+      "Comprueba que puedes recuperar un archivo",
+      "Prepara el doble paso para entrar",
+      "Define a quién llamar si el negocio se detiene"
+    ],
+    "notice": "Sin cita ni servicio contratado. Contacta tú a tu proveedor; nunca compartas credenciales."
+  },
+  "audit": [
+    {
+      "time": "2026-10-05T03:08:17.675Z",
+      "action": "Sesión iniciada. Sin conexión a cuentas."
+    },
+    {
+      "time": "2026-10-05T03:09:21.470Z",
+      "action": "Ejemplo ficticio cargado."
+    },
+    {
+      "time": "2026-10-05T03:09:21.735Z",
+      "action": "Diagnóstico simulado calculado. Ningún control fue verificado."
+    },
+    {
+      "time": "2026-10-05T03:09:53.352Z",
+      "action": "Escenario de interrupción ajustado."
+    },
+    {
+      "time": "2026-10-05T03:09:55.091Z",
+      "action": "Aprobación explícita: borrador local preparado, no enviado."
+    },
+    {
+      "time": "2026-10-05T03:10:14.085Z",
+      "action": "Resumen descargado por el usuario."
+    }
+  ]
+}

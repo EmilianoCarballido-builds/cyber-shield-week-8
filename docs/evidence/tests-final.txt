@@ -1,18 +1,18 @@
-✔ validates people boundaries and package threshold (0.655125ms)
-✔ rejects missing, extra, malformed and adversarial inputs (0.12875ms)
-✔ money is scenario arithmetic, handles zero income (0.0785ms)
-✔ unknown does not become safe; incident overrides all protections (0.08025ms)
-✔ all 54 control combinations yield exactly three unique priorities (0.296292ms)
-✔ approval is explicit and export stays labeled (0.335333ms)
-✔ no-provider persona gets an actionable first step, incident still wins (0.053542ms)
-✔ cancel/reopen always requires fresh consent (31.622875ms)
-✔ unfinished form values survive navigation and determine correct price (29.26375ms)
-✔ empty numeric field remains invalid after navigation (9.651042ms)
-✔ incident priority and zero-income math render without Infinity (14.133416ms)
-✔ changing scenario updates displayed amount; audit records it (20.366458ms)
-✔ reset clears prior assessment, draft and audit history (19.033875ms)
-✔ persona fixes show cost exclusions and money equivalence, not recovery time (13.306417ms)
-✔ local AI requires consent and unsupported GPU preserves simulated output (14.378917ms)
+✔ validates people boundaries and package threshold (0.836958ms)
+✔ rejects missing, extra, malformed and adversarial inputs (0.14325ms)
+✔ money is scenario arithmetic, handles zero income (0.09325ms)
+✔ unknown does not become safe; incident overrides all protections (0.122458ms)
+✔ all 54 control combinations yield exactly three unique priorities (0.290583ms)
+✔ approval is explicit and export stays labeled (0.09825ms)
+✔ no-provider persona gets an actionable first step, incident still wins (0.287541ms)
+✔ cancel/reopen always requires fresh consent (30.162084ms)
+✔ unfinished form values survive navigation and determine correct price (29.178834ms)
+✔ empty numeric field remains invalid after navigation (9.723708ms)
+✔ incident priority and zero-income math render without Infinity (14.31125ms)
+✔ changing scenario updates displayed amount; audit records it (20.771709ms)
+✔ reset clears prior assessment, draft and audit history (18.740417ms)
+✔ persona fixes show cost exclusions and money equivalence, not recovery time (13.662208ms)
+✔ local AI requires consent and unsupported GPU preserves simulated output (14.843041ms)
 ℹ tests 15
 ℹ suites 0
 ℹ pass 15
@@ -20,4 +20,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 4985.685333
+ℹ duration_ms 5013.479333

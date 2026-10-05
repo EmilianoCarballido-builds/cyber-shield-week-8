@@ -1,0 +1,13 @@
+{
+  "url": "https://cyber-shield-week-8.vercel.app",
+  "appCommit": "7db7555",
+  "invalid26Rejected": "Personas: usa un número entero de 5 a 25.",
+  "preservedEmployees": "12",
+  "consentDisabledAfterCancel": true,
+  "scenario": "8000 daily / 8 * 9 = 9000 MXN",
+  "equivalent": "47 min, not recovery time",
+  "mobileViewport": 390,
+  "observedScrollWidth": 390,
+  "download": "Actual JSON saved to Downloads and validated separately; browser event watcher timed out.",
+  "console": []
+}
