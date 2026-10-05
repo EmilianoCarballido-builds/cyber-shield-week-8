@@ -1,22 +1,23 @@
-✔ validates people boundaries and package threshold (0.631083ms)
-✔ rejects missing, extra, malformed and adversarial inputs (0.124459ms)
-✔ money is scenario arithmetic, handles zero income (0.076083ms)
-✔ unknown does not become safe; incident overrides all protections (0.080792ms)
-✔ all 54 control combinations yield exactly three unique priorities (0.551125ms)
-✔ approval is explicit and export stays labeled (0.153667ms)
-✔ no-provider persona gets an actionable first step, incident still wins (0.108042ms)
-✔ cancel/reopen always requires fresh consent (30.938833ms)
-✔ unfinished form values survive navigation and determine correct price (29.51675ms)
-✔ empty numeric field remains invalid after navigation (11.167125ms)
-✔ incident priority and zero-income math render without Infinity (14.881292ms)
-✔ changing scenario updates displayed amount; audit records it (22.612375ms)
-✔ reset clears prior assessment, draft and audit history (19.340708ms)
-✔ persona fixes show cost exclusions and money equivalence, not recovery time (14.686541ms)
-ℹ tests 14
+✔ validates people boundaries and package threshold (0.655125ms)
+✔ rejects missing, extra, malformed and adversarial inputs (0.12875ms)
+✔ money is scenario arithmetic, handles zero income (0.0785ms)
+✔ unknown does not become safe; incident overrides all protections (0.08025ms)
+✔ all 54 control combinations yield exactly three unique priorities (0.296292ms)
+✔ approval is explicit and export stays labeled (0.335333ms)
+✔ no-provider persona gets an actionable first step, incident still wins (0.053542ms)
+✔ cancel/reopen always requires fresh consent (31.622875ms)
+✔ unfinished form values survive navigation and determine correct price (29.26375ms)
+✔ empty numeric field remains invalid after navigation (9.651042ms)
+✔ incident priority and zero-income math render without Infinity (14.133416ms)
+✔ changing scenario updates displayed amount; audit records it (20.366458ms)
+✔ reset clears prior assessment, draft and audit history (19.033875ms)
+✔ persona fixes show cost exclusions and money equivalence, not recovery time (13.306417ms)
+✔ local AI requires consent and unsupported GPU preserves simulated output (14.378917ms)
+ℹ tests 15
 ℹ suites 0
-ℹ pass 14
+ℹ pass 15
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 4993.919458
+ℹ duration_ms 4985.685333

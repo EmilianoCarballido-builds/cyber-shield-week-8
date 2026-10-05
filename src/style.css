@@ -8,3 +8,5 @@
 /* Persona test: keep exclusions adjacent to price and improve reading on small screens. */
 .price-card .price-exclusions{font-size:11px;color:#e0e9d1;border:1px solid #657954;padding:12px;border-radius:5px;line-height:1.6}
 @media(max-width:720px){.action p,.incident-list p,.right-stack>.card>p,.ai-card p,.note,details p{font-size:14px}.control-question legend,label,.segmented span,.button{font-size:13px}.control-question>p,label>small,.under-button,.price-card p.small,.check-list li,.price-card .check-list li,.exclusions{font-size:12px}.segmented span{padding:12px}.nav-item{min-height:44px}.coverage-state{font-size:10px}.heading>p{font-size:14px}}
+
+[hidden]{display:none!important}

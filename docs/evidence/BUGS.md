@@ -18,3 +18,6 @@ Evidence: mechanical-v1.json, screenshots 01–05, tests/ui.test.js. Follow-up r
 
 ### Regression caught during fix: reset recaptured discarded form
 The new pre-navigation capture initially ran inside reset and restored an empty old employee field. The zero-income/incident UI test failed because submission remained invalid. Reset now renders the new session directly, bypassing capture of discarded data. All tests rerun after this correction.
+
+### Optional model load stalled
+Observed real model download reached 202 MB / 76% and stopped progressing, while inference had not completed. Replaced main-thread engine with WebWorker engine, explicit cancellation, and a 180-second no-progress watchdog. A follow-up attempt returned to labeled simulated guidance; no real inference success is claimed. Default diagnosis/pricing never depends on model availability.

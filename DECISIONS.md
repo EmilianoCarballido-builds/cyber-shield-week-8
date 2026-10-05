@@ -24,3 +24,8 @@
 - Mejoramos claridad de equivalencia monetaria, exclusiones junto al precio, borrador y lectura móvil.
 - Inconsistencia de capturas originales (defaults vs fixture) documentada; caso sin proveedor confirmado aparte.
 - La cifra de contribución del packet se corrige en UI a saldo antes de impuestos. Packet original queda intacto.
+
+## Robustez de IA opcional
+- Descarga real observada: 202 MB / 76%; no inferencia completa. No declarar éxito que no ocurrió.
+- Worker, cancelar y watchdog de 180 s sin progreso mantienen el control del usuario. La prueba posterior regresó al modo simulado.
+- 15 tests finales: consentimiento y WebGPU ausente también preservan el resultado.
