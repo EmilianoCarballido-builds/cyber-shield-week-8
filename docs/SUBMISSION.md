@@ -32,3 +32,6 @@ Pushes posteriores conservan el alias público y sus deployment IDs quedan dispo
 
 ## Revisión de la rúbrica
 URL funciona: verificación real de navegador y HTTP. Packet antes de código: commit remoto previo. Condiciones Blueprint: matriz en packet y límites en SECURITY. Test-fix-redeploy: BUGS, tests y deploys. Persona: agente fresco, hallazgos, correcciones y reprueba. Conversación: snapshot literal de mensajes disponibles con ledger resumido, no una transcripción inventada. Video: guion listo; archivo MP4 aún por grabar.
+
+## Recibo final de publicación
+Commit de handoff: 73e4c5c0735c3eed2fb9eeb5c3f32b824e737146. Deployment READY: dpl_69d9J4xFDo3LS2mt3rHciYjmPTvH, https://cyber-shield-week-8-5iqny5yt6-smart-business2.vercel.app. También READY el deploy de robustez 43e0094: dpl_HB66r4KSX4ZV5AvV6zBwXraVteSa, https://cyber-shield-week-8-c60m5gkvt-smart-business2.vercel.app. Cinco despliegues READY verificados; cambios de documentación posteriores no alteran el código de app.

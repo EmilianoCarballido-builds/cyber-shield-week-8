@@ -36,4 +36,4 @@
 - PDF packet, persona y conversación disponible preparados, renderizados y revisados. Script de demo preparado; no fabricar video ni voz/reflexión personal de Emiliano.
 - BUILDCHAT no equivale a exportación total de cada tool output; límites explícitos.
 - Primer movimiento de Emiliano: abrir URL, ensayar el guion con ejemplo ficticio, adaptar reflexión y grabar el MP4. Primer movimiento técnico futuro: comprobar modelo local en un navegador compatible con red estable, después entrevistas con pymes reales; no vender paquetes aún.
-- Cierre: commit y publicación de documentos mediante integración GitHub; checkout local sincronizado al remoto. No secretos ni datos personales de terceros.
+- Cierre: commit y publicación de documentos mediante integración GitHub; fuentes locales reflejan los cambios publicados; el fetch final de metadatos Git locales quedó bloqueado por la restricción de red (el remoto publicado es la referencia). No secretos ni datos personales de terceros.
