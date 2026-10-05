@@ -1,0 +1,8 @@
+{
+  "url": "https://cyber-shield-week-8.vercel.app",
+  "commit": "5c78693",
+  "cancelThenReopenConfirmationEnabled": true,
+  "employeesEntered": "12",
+  "employeesAfterNavigation": "8",
+  "method": "Actual browser UI, Codex in-app browser; CLI browser launch blocked by macOS MachPort sandbox."
+}

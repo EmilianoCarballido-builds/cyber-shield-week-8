@@ -1,0 +1,20 @@
+✔ validates people boundaries and package threshold (0.606209ms)
+✔ rejects missing, extra, malformed and adversarial inputs (0.473667ms)
+✔ money is scenario arithmetic, handles zero income (0.102333ms)
+✔ unknown does not become safe; incident overrides all protections (0.095ms)
+✔ all 54 control combinations yield exactly three unique priorities (0.861042ms)
+✔ approval is explicit and export stays labeled (0.314958ms)
+✔ cancel/reopen always requires fresh consent (31.287833ms)
+✔ unfinished form values survive navigation and determine correct price (29.958625ms)
+✔ empty numeric field remains invalid after navigation (10.446917ms)
+✔ incident priority and zero-income math render without Infinity (13.97375ms)
+✔ changing scenario updates displayed amount; audit records it (22.737666ms)
+✔ reset clears prior assessment, draft and audit history (19.342125ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4876.30575
