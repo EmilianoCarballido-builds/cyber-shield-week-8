@@ -14,12 +14,13 @@ export function validate(input) {
  return Object.fromEntries(keys.map(k=>[k,input[k]]));
 }
 export const PACKAGES = Object.freeze([
- {id:'esencial',name:'Esencial',min:5,max:10,price:790,minutes:30,features:['Revisión mensual de accesos','Checklist de respaldo y recuperación','30 min/mes de revisión humana propuesta'],costs:[250,150,120,79]},
+ {id:'esencial',name:'Esencial',min:5,max:10,price:790,minutes:30,features:['Revisión mensual de accesos','Lista guiada de respaldo y recuperación','30 min/mes de revisión humana propuesta'],costs:[250,150,120,79]},
  {id:'continuidad',name:'Continuidad',min:11,max:25,price:1490,minutes:60,features:['Todo lo incluido en Esencial','Ensayo trimestral de recuperación','60 min/mes de revisión humana propuesta'],costs:[500,300,180,149]}
 ]);
 const ACTIONS={
+ findHelp:{id:'findHelp',title:'Elige a una persona de confianza para empezar',detail:'Sin cambiar archivos ni compartir claves, anota fuera de esta app dónde crees que está tu copia y quién la configuró. Pide a tu contador o asociación una referencia de soporte técnico y verifica su identidad por un canal conocido. La prueba de recuperación debe hacerla una persona competente.',owner:'Tú, con una referencia conocida',time:'Primer paso',critical:false},
  incident:{id:'incident',title:'Habla con una persona de confianza',detail:'Contacta a tu responsable de TI por un canal que ya conozcas. Si hubo fraude, llama a tu banco desde su app oficial. No ejecutes borrados ni restauraciones por tu cuenta.',owner:'Dueño + especialista',time:'Ahora',critical:true},
- backup:{id:'backup',title:'Comprueba que puedes recuperar un archivo',detail:'Pide a tu proveedor una prueba con un archivo ficticio, en un entorno separado. Tener una copia no demuestra que puedas recuperar la operación.',owner:'Proveedor de TI',time:'Esta semana',critical:true},
+ backup:{id:'backup',title:'Comprueba que puedes recuperar un archivo',detail:'Pide a tu proveedor una prueba con un archivo ficticio fuera de los archivos que usas para trabajar, sin sustituirlos. Tener una copia no demuestra que puedas recuperar la operación.',owner:'Proveedor de TI',time:'Esta semana',critical:true},
  access:{id:'access',title:'Prepara el doble paso para entrar',detail:'Revisa con tu proveedor la verificación en dos pasos del correo. Antes de cambiar accesos, acuerden cómo recuperar la cuenta sin interrumpir el negocio.',owner:'Dueño + proveedor',time:'Esta semana',critical:true},
  updates:{id:'updates',title:'Agenda una revisión de actualizaciones',detail:'Pide una revisión de los equipos. Acordar horario, respaldo y aprobación antes de instalar evita interrumpir las ventas.',owner:'Proveedor de TI',time:'Esta semana',critical:true},
  recovery:{id:'recovery',title:'Define a quién llamar si el negocio se detiene',detail:'Prepara fuera de esta app una lista de responsables y canales oficiales. Ensaya quién decide y qué operación debe recuperarse primero.',owner:'Dueño',time:'Esta semana',critical:false},
@@ -31,7 +32,7 @@ export function assess(raw) {
  const controls=['backup','access','updates'];
  const unknown=controls.filter(k=>input[k]==='unknown');
  const missing=controls.filter(k=>input[k]==='no');
- const ids=input.incident==='yes'?['incident']:[];
+ const ids=input.incident==='yes'?['incident']:input.partner==='ninguno'?['findHelp']:[];
  for(const k of ['backup','access','updates']) if(input[k]!=='yes') ids.push(k);
  for(const k of ['recovery','verify','practice']) if(ids.length<3) ids.push(k);
  const severity=input.incident==='yes'?'Atención inmediata':missing.length>=2?'Prioridad alta':unknown.length||missing.length?'Por revisar':'Mantener y comprobar';

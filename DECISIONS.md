@@ -15,3 +15,12 @@
 - Primer deploy READY: dpl_3giWxZgZBt9EMPbFaBwJPrqDupn7, URL https://cyber-shield-week-8.vercel.app (versión inmutable: https://cyber-shield-week-8-pr7vdtfza-smart-business2.vercel.app).
 - Build local y Vercel correctos. Se autoriza solo el script de instalación de esbuild. Dependencias fijadas y lockfile; no secretos.
 - Seis pruebas unitarias pasan, incluidas 54 combinaciones de controles/incidente. Próximo: navegador, bug real, persona fresca, fix y redeploy.
+
+## Pruebas y correcciones
+- Dos bugs reproducidos en URL pública: Cancelar conservaba consentimiento; navegar a ayuda descartaba respuestas sin enviar. Corregidos en 0c03598, con regresiones DOM.
+- El nuevo guardado de formulario reveló una regresión en reset; la prueba la detectó y se corrigió antes del commit.
+- Segundo deploy READY: dpl_5KsymNxjsnBEdtHCxTibMb59EQoF, commit 0c03598; https://cyber-shield-week-8-8ll8ygn9d-smart-business2.vercel.app.
+- Persona fresca: Patricia, 49, 8 personas, baja familiaridad técnica. No sustituye entrevistas reales. Mayor bloqueo: depender de un proveedor inexistente; añadimos paso seguro para conseguir ayuda.
+- Mejoramos claridad de equivalencia monetaria, exclusiones junto al precio, borrador y lectura móvil.
+- Inconsistencia de capturas originales (defaults vs fixture) documentada; caso sin proveedor confirmado aparte.
+- La cifra de contribución del packet se corrige en UI a saldo antes de impuestos. Packet original queda intacto.
